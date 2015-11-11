@@ -637,9 +637,6 @@ C
       CALL RZERO (BD,10)
       CALL SETBD (BD,DTLAG,NBD)
       NAB = 3
-C      if(isetzero .eq. 1) NAB=1
-      NAB=NBD
-      WRITE (*,*) 'NAB: ', NAB
       IF (ISTEP.LE.2 .and. irst.le.0) NAB = ISTEP
       CALL RZERO   (AB,10)
       CALL SETABBD (AB,DTLAG,NAB,NBD)
